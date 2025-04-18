@@ -33,6 +33,8 @@ jobs:
     - name: Deploy to GitHub Pages
       uses: crazy-max/ghaction-github-pages@v1.5.1
       with:
-        GITHUB_PAT: ${{ secrets.PAT }}
         build_dir: ./out/wwwroot
+      env:
+        GITHUB_PAT: ${{ secrets.PAT }}
+
 
