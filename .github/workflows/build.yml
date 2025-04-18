@@ -31,7 +31,7 @@ jobs:
       run: dotnet publish -c Release -o out
           
     - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v3
+      uses: crazy-max/ghaction-github-pages@v1.5.1
       with:
         github_token: ${{ secrets.PAT }}
         publish_dir: ./out/wwwroot
